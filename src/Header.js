@@ -1,18 +1,18 @@
-import React from "react";
-import { Link } from "react-router-dom";
+// // import React from "react";
+// // import { Link } from "react-router-dom";
 
-const Header = () => {
-  return (
-    <div>
-      Header Navbar
-      <a>
-        <Link to={"/cart"}>Cart</Link>
-      </a>
-    </div>
-  );
-};
+// // const Header = () => {
+// //   return (
+// //     <div>
+// //       Header Navbar
+// //       <a>
+// //         <Link to={"/cart"}>Cart</Link>
+// //       </a>
+// //     </div>
+// //   );
+// // };
 
-export default Header;
+// // export default Header;
 // import React from "react";
 // import { Link } from "react-router-dom";
 
@@ -47,6 +47,7 @@ export default Header;
 //               class="w-4 h-4 ml-1"
 //               viewBox="0 0 24 24"
 //             >
+//               cart
 //               {/* <path d="M5 12h14M12 5l7 7-7 7"></path> */}
 //             </svg>
 //           </Link>
@@ -57,3 +58,15 @@ export default Header;
 // };
 
 // export default Header;
+import React from "react";
+import { Link } from "react-router-dom";
+const Header = () => {
+  return (
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      HeaderNavbar
+      <Link to={"/cart"}>Cart</Link>
+    </div>
+  );
+};
+
+export default Header;

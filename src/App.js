@@ -28,17 +28,19 @@ const App = () => {
     <Router>
       {isHeaderVisible && <Header />}
       <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/signup" element={<SignUp />} />
         <Route
           path="/"
           element={
-            <AuthRoute>
-              <Sidebar />
-            </AuthRoute>
+            <>
+              <AuthRoute>
+                <Sidebar />
+              </AuthRoute>
+            </>
           }
         />
+        <Route path="/login" element={<Login />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
     </Router>
   );
